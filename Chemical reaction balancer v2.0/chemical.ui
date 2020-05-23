@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Root</class>
+ <widget class="QMainWindow" name="Root">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>659</width>
+    <height>465</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>659</width>
+    <height>465</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>v 2.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon.ico</normaloff>
+    <normalon>icon.ico</normalon>
+    <disabledoff>icon.ico</disabledoff>
+    <disabledon>icon.ico</disabledon>
+    <activeoff>icon.ico</activeoff>
+    <activeon>icon.ico</activeon>
+    <selectedoff>icon.ico</selectedoff>
+    <selectedon>icon.ico</selectedon>icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(216, 3, 147, 255), stop:0.875 rgba(219, 20, 79, 255));
+padding: 5px;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>601</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 25px;
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="History_btn">
+     <property name="geometry">
+      <rect>
+       <x>-50</x>
+       <y>120</y>
+       <width>100</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 50;
+text-align: right;
+color: white;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0.0451977 rgba(59, 255, 27, 255), stop:0.852273 rgba(0, 187, 0, 255));
+padding: 12px;
+</string>
+     </property>
+     <property name="text">
+      <string>History</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Reset_btn">
+     <property name="geometry">
+      <rect>
+       <x>552</x>
+       <y>120</y>
+       <width>100</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 50;
+text-align: left;
+color: white;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0.0451977 rgba(59, 255, 27, 255), stop:0.852273 rgba(0, 187, 0, 255));
+padding: 12px;
+</string>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Balance_btn">
+     <property name="geometry">
+      <rect>
+       <x>252</x>
+       <y>363</y>
+       <width>100</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 50;
+text-align: top;
+color: white;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0.0451977 rgba(59, 255, 27, 255), stop:0.852273 rgba(0, 187, 0, 255));
+padding: 25px;
+</string>
+     </property>
+     <property name="text">
+      <string>Balance</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Left_entry">
+     <property name="geometry">
+      <rect>
+       <x>58</x>
+       <y>99</y>
+       <width>491</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid rgb(255, 0, 127);
+border-radius: 10px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Enter reactants</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Right_entry">
+     <property name="geometry">
+      <rect>
+       <x>58</x>
+       <y>201</y>
+       <width>491</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid rgb(255, 0, 127);
+border-radius: 10px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter products</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Ans_label">
+     <property name="geometry">
+      <rect>
+       <x>58</x>
+       <y>305</y>
+       <width>491</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid rgb(255, 0, 127);
+border-radius: 10px;</string>
+     </property>
+     <property name="text">
+      <string>Balanced Equation</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>156</y>
+       <width>47</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>17</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 127);</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>52</x>
+       <y>20</y>
+       <width>271</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Serif</family>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: qlineargradient(spread:pad, x1:0.0284091, y1:0.034, x2:1, y2:0, stop:0 rgba(255, 0, 173, 255), stop:0.875 rgba(254, 23, 91, 255));</string>
+     </property>
+     <property name="text">
+      <string>Chemical Equation balancer</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Reset_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Left_entry</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>639</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>335</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Reset_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Right_entry</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>639</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>335</x>
+     <y>251</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Reset_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Ans_label</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>639</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>335</x>
+     <y>355</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
